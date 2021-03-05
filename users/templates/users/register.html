@@ -1,0 +1,12 @@
+{% extends 'users/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+	<form method = "POST" class = 'ml-5 mr-5'>
+		<legend>Register here!</legend>
+		{{ form|crispy }}
+		<button type = 'submit' class = 'btn btn-primary'>Register</button>		
+	</form>
+
+{% endblock content %}
